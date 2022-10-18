@@ -11,6 +11,8 @@ import { ProductlistComponent } from './components/productlist/productlist.compo
 import { ProductComponent } from './components/product/product.component';
 import { SlideComponent } from './components/slide/slide.component';
 import { CurrencyVnPipe } from './pipes/currency-vn.pipe';
+import {ImageModule} from 'primeng/image';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { CurrencyVnPipe } from './pipes/currency-vn.pipe';
     ProductlistComponent,
     ProductComponent,
     SlideComponent,
-    CurrencyVnPipe
+    CurrencyVnPipe,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ImageModule
   ],
   providers: [
   ],
